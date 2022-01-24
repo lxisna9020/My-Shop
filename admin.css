@@ -1,0 +1,165 @@
+ 
+table {
+    
+    width: 100%;
+    border-collapse: collapse;
+    border : white;
+  }
+
+
+.titre {
+    width : 120%;
+    display : flex;
+    align-self:center;
+    border: 4px double #333;
+    border-radius: 10px;
+    font-size: 35px;
+    color: #333;
+    margin-top : 40px; 
+    padding : 15px;
+    margin-bottom : 40px; 
+
+    
+}
+
+#descriptionboxproduct
+{
+    height:200px;
+    font-size:14pt; 
+}
+.greenbutton{
+    display: inline-block;
+    background-color: #12a844;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 15px;
+    padding: 15px;
+    width: 250px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    }
+
+.greenbutton:hover {
+        background-color: rgb(79, 185, 79);
+        color: rgb(190, 190, 190);
+    
+}
+
+.greenbutton:active{ 
+    background-color: #7bf17f;
+  box-shadow: 0 5px #666;
+  transform: translateY(10px);
+}
+
+.redbutton{
+    display: inline-block;
+    background-color: #d83d38;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 15px;
+    padding: 15px;
+    width: 150px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    }
+
+    .redbutton:hover {
+        background-color: rgb(248, 105, 105);
+        color: rgb(190, 190, 190);
+    
+}
+
+.redbutton:active{ 
+    background-color: #f78e8e;
+  box-shadow: 0 5px #666;
+  transform: translateY(10px);
+}
+
+.orangebutton{
+    display: inline-block;
+    background-color: orange;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 150px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    }
+
+
+    .orangebutton:hover {
+        background-color: rgb(248, 206, 128);
+        color: rgb(190, 190, 190);
+    
+}
+
+.orangebutton:active{ 
+    background-color: #f5e7c3;
+  box-shadow: 0 5px #666;
+  transform: translateY(10px);
+}
+
+
+.error{
+    box-align: center;
+    width : 50%;
+    margin-top: 20px;
+    margin-bottom : 20px; 
+    border-radius: 10px;
+    border: 4px double rgb(235, 75, 75);
+   
+
+    font: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    color :rgb(235, 75, 75);
+}
+
+
+.successmessage{
+    text-align: center;
+    width : 50%;
+    margin-top: 20px;
+    margin-bottom : 20px; 
+    border-radius: 10px;
+    border: 4px double rgb(101, 187, 115);
+   
+
+    font: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    color :rgb(101, 187, 115);
+}
+
+
+.titragetableau{
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+input:focus{
+ background-color : rgb(223, 223, 223);
+}
+
+
+tr, .tableauuser{
+border: 2px solid black;
+}

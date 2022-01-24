@@ -1,0 +1,1026 @@
+@font-face {
+    font-family: "Avenir fonts";
+    src:url("fonts/avenir_ff/AvenirLTStd-Roman.otf") format('truetype');
+}
+
+@font-face{
+    font-family: "Roboto";
+    src:url("fonts/roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+
+/* PARTIE YOHAN */
+
+/* DECOMMENTE CETTE PARTIE POUR EMPECHER DE 
+SCROLL SUR LE COTÉ PAR CONTRE BUG SUR LES 
+AFFICHAGE DES PRIX
+
+
+html{
+    overflow-x:hidden;
+} */ 
+
+nav input[type="checkbox"]{
+    display:none;
+}
+
+.select{
+    grid-column: 11;
+    justify-self: center;
+    align-self: center;
+    padding-left:11vw;
+    display:flex;
+}
+.mobile {
+    display:none;
+}
+body {
+    margin:0px 40px 0px 40px;
+    
+}
+/* FORMULAIRE d'INSCRIPTION */
+
+.formulaire h1{
+    font-family: "Avenir fonts";
+    font-size: 2rem;
+    text-align: center;
+}
+.formulaire{
+    font-family: "Avenir fonts";
+    font-size: 1.5rem;
+    text-align: center;
+}
+.formulaire form {
+    text-align:center;
+    display:flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+.formulaire label{
+    font-family: "Avenir fonts";
+    font-size: 1.5rem;
+
+}
+
+.formulaire input{
+    transition:all 0.5s ease;
+    font-size: 1.5rem;
+}
+
+.formulaire input:focus{
+    font-size:1.6rem;
+
+}
+.formulaire button{
+   margin:1vw;
+   padding: 1vw 3vw 1vw 3vw;
+    font-size: 1.5rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.formulaire button:focus{
+    padding: 1.1vw 3.2vw 1.1vw 3.2vw;
+}
+.formulaire button:hover{
+    padding: 1.1vw 3.2vw 1.1vw 3.2vw;
+}
+
+.reponsePHP{
+    text-align: center;
+    font-family: "Avenir fonts";
+    font-size:2.5rem;
+    color:#e74c3c;
+} 
+/* FIN FORMULAIRE INSCRIPTION */ 
+
+/* BUTTON LOGOUT */
+
+.button_logout{
+    border:none;
+    cursor:pointer;
+    background: transparent;
+    text-decoration: none;
+    color:black;
+    font-family: "Avenir fonts";
+    transition: opacity 0.4s ease-in-out;
+}
+
+.desktop{
+    background: white;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+ }
+
+ nav a{
+    text-decoration: none;
+    color:black;
+    font-family: "Avenir fonts";
+    transition: opacity 0.4s ease-in-out;
+ }
+
+ #logo{
+    margin-bottom: 10%;
+} 
+nav .main{
+    display:flex;
+    grid-column: 2;
+    grid-row: 1;
+    justify-content: center;
+    align-content: center;
+}
+nav .main a{
+    display:flex;
+    align-self: center;
+    padding:16px;
+}
+
+nav .logincart{
+    display:flex;
+    grid-column: 12;
+    grid-row: 1;
+    align-items: center;
+}
+.logincart a{
+
+
+    display:flex;
+    align-self: center;
+    padding:16px;
+}
+
+
+nav a:hover{
+    opacity: 0.5;
+}
+
+.search{
+    display:grid;
+    grid-template-columns:repeat(12, 1fr);
+}
+
+.search button{
+    grid-column:1;
+}
+.search svg{
+    width:50%;
+}
+
+.submit_input{
+    display:flex;
+}
+.submit_input input{
+    font-family: "Roboto";
+    grid-column: 2/11;
+    font-size:1.7em;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 3px black;
+    background-image: url("picto/Sajari Logo.png");
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-position-x: right;
+    background-position-y: center;
+    padding-left:2.5%;
+    padding-right:2.5%;
+    transition: all 0.5s ease;
+    width:50vw;
+    margin: 2vh;
+}
+
+.resultat_recherche{
+    font-size:1.5rem;
+    font-family: "Roboto";
+    text-align: center;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    flex-wrap:wrap;
+}
+
+.resultat_recherche .image_article{
+    height:24vw;
+}
+
+.resultat_recherche h5{
+    font-size:1.7rem;
+}
+
+.resultat_recherche p{
+    text-align: center;
+    align-self: center;
+}
+
+.search input:focus{
+    font-size:1.5em;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 3px black;
+    background-color: #cacfd2;
+    background-position-x: right -15px;
+
+}
+
+.search button{
+    grid-column:1;
+    align-self:start;
+    background: "picto/Search.png";
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border:none;
+    cursor:pointer;
+    height:100%;
+    width:5%;
+    min-width: 80px;
+}
+
+.search button:hover{
+    background-color: #cacfd2;
+}
+
+.search button:active{
+    opacity:50%;
+}
+
+.search select {
+    position:relative;
+    grid-column: 12/12;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom:solid 3px#d5dbdb;
+    font-family:"Roboto";
+    font-size: 1.2em;
+    text-align: left;
+    background-color: #F9F9F9;
+    min-width: 200px;
+    margin:1vw;
+    padding: 0.5vw;
+}
+
+/* FIN PARTIE YOHAN */
+
+
+
+li{
+    font-family: "Avenir fonts"; 
+}
+
+
+ /* ----------------- DEBUT PARTIE CODE ALICE -----------  */
+
+
+ /* Global grid des articles  4 par ligne */
+.wrapper {
+    display: grid;
+    grid-auto-flow: row dense;
+    grid-template-columns: 21% 21% 21% 21%;
+    column-gap: 7%;
+    width : 100%;
+    min-width: 30px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+
+/* Articles + images */
+
+article {
+   display: flex; 
+   flex-flow: column;
+   flex-wrap : wrap;
+   height : 100%;
+   width: auto;
+   padding-left: 2rem;
+   padding-bottom: 30px;
+   
+} 
+
+ /* Responsive article pour screen mobile */
+ @media screen and (min-width : 320px) and (max-width : 770px){
+    .wrapper{
+        display : grid;
+        grid-auto-flow: row;
+        grid-template-columns: 100%;
+        width : 100%;
+        height : 100%;
+        align-items: start;
+        
+    }
+
+    .image_article{
+       
+        align-items: start;
+    }
+
+    article{ 
+        align-items: center;
+        width : 100%
+    }
+
+    .image_article:hover{
+            /* display : flex;
+            align-self: center;
+            align-items : stretch; */
+            opacity: 1;
+        }
+    
+}
+
+
+ article .firstlign{
+    display : grid;
+    grid-template-columns: auto 5rem;
+    min-width: 80%;
+    width: 100%;
+    height : 13%;
+    
+    
+    
+} 
+
+.secondlign{
+    display : flex;
+    flex-flow : column;
+}
+
+ .thirdlign{
+    display: flex;
+    flex-flow : column;
+    justify-content : flex-start; 
+    align-content : center;
+    flex-wrap : nowrap;
+    width : 100%;
+
+
+} 
+
+
+.image_article{
+    display : flex;
+    align-self: center;
+    /* width: 100%; */
+    height: 200px;
+    opacity: 1.0;
+    padding-top:2vh;
+    transition: all 0.3s ease-in-out;
+}
+
+.image_article:hover{
+    /* display : flex;
+    align-self: center;
+    align-items : stretch; */
+    opacity: 0.5;
+}
+
+
+.firstlign .price {
+    
+    grid-column: 2/2;
+    grid-column-end: -2;
+    justify-items: end;
+    justify-content : end;
+    place-self : end;
+    align-self : stretch;
+    font-family: "Roboto";
+    font-size: 12px;
+    width : 100%;
+
+
+}
+article .figurinename {
+    
+    grid-column : 1/2;
+    grid-column-start: 1;
+    font-family: "Avenir fonts";
+    font-size: 1rem;
+}
+
+.rate {
+    display : flex;
+    order : 2;
+    width: 100%;
+    
+    align-self : flex-start;
+    size-adjust: 20%;
+    padding: 0;
+    
+}
+
+.Add_cart{
+    order : 1;
+   
+   display: flex;
+    align-self : flex-end ;
+    position : absolute;
+    z-index : 2;
+    max-width: 35px;
+    max-height: auto;
+
+}
+
+.description{
+    font-family: "Roboto fonts";
+    font-size: 10px;
+    color : #000000;
+    flex : 2 2 auto;
+}
+
+
+
+/* Pages du footer  */
+
+.page :hover{
+  
+    background : #303030;
+    margin-right: 1rem;
+    color : white;
+    text-decoration:none;
+    list-style: none;
+}
+
+li{
+    list-style-type: none;
+    
+}
+
+.navpage{
+    flex-direction: row;
+    display: flex;
+}
+
+a { 
+    text-decoration:none;
+    color : #303030;
+    padding: 10px 10px;
+    font-family: "Roboto";
+}
+    
+/* ----------------- FIN PARTIE CODE ALICE -----------  */
+
+
+
+
+
+.separator_mobile-only {
+    visibility: collapse;
+}
+
+
+.filters-container {
+	display: flex;
+    font-family: "Avenir fonts";
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    margin: 20px; 
+}
+
+.filter-header {
+    visibility: visible;
+    color: #909195;
+    font-size: 12px
+}
+
+#filter-header-arrow {
+    display: inline-block;
+    transform: rotate(45deg);
+    appearance: none;
+    content: none;
+	height: 8px;
+	width: 8px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.filter-header-expandable {
+    display: flex;
+    justify-content: space-between;
+    visibility: hidden;
+    color: black;
+    font-size: 16px
+}
+
+.separator {
+	border-bottom: 2px solid #E5E5E5;
+}
+
+.filter-row.separator {
+	display: flex;
+	border-bottom: 2px solid #E5E5E5;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+.filter-row {
+	display: flex;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+.filter-row label {
+	flex-grow: 0;
+	margin-right: 10px;
+}
+
+.filter-row * {
+    flex-flow : column nowrap;
+    align-content: flex-end;
+	flex-grow: 1;
+	background-color: transparent;
+	border: none;	
+    text-align: end;
+}
+
+.filter-row input[type=range] {
+	appearance: none;
+	margin: 0;
+	background: linear-gradient(#E5E5E5, #E5E5E5) no-repeat center;
+	background-size: 100% 2px;
+}
+
+
+                               		/*CSS部分关于thumb圆圈那个部分*/
+.filter-row input[type=range]::-webkit-slider-thumb {
+	appearance: none;
+	height: 16px;
+	width: 16px;
+	border: 2px solid black;
+	border-radius: 50%;
+	background: white;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.maximini{ 
+    display : flex;
+    flex-flow : row wrap;
+    align-items: flex-end;
+}
+.mini_price {
+flex: 1 0 auto;
+align-self: flex-start;
+font-family: "Avenir fonts";
+}
+
+.maxi_price {
+   z-index: 2;
+    font-family: "Avenir fonts";
+    width : 10%;
+    align-self: baseline;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/:checked */
+
+.expandable {
+    visibility: visible;
+}
+
+/* https://www.w3schools.com/howto/howto_css_arrows.asp */
+
+
+/* Hide the toggle checkbox */
+#expand-toggle {
+    display: none;
+}
+
+/* Style the button when the checkbox is checked */
+#expand-toggle:checked ~ #filter-header-arrow{
+    transform: rotate(-135deg);
+}
+
+/* Show hidden content when the checkbox is checked */
+#expand-toggle:checked ~ .expandable {
+    visibility: visible;
+}
+
+/* FILTER MOBILE */
+@media screen and (max-width:400px){
+    .mobile-only {
+        visibility: visible;
+    }
+    
+    /* Hide expandable content by default */
+    .expandable {
+        visibility: collapse;
+    }
+    
+    .filter-header {
+        visibility: hidden;
+    }
+    
+    .filter-header-expandable {
+        visibility: visible;
+    }        
+}
+/* MEDIA QUERY YOHAN */
+
+/* MEDIA QUERY MOBILE */
+
+@media screen and (min-width : 320px) and (max-width : 770px) {
+
+    body{
+    margin:0 !important;
+    }
+    nav input[type="checkbox"]{
+        display:block;
+    }
+    .desktop{
+        display:none;
+    }
+    .mobile {
+        display:grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows:repeat(1,1fr);
+    }
+
+
+    
+    .resultat_recherche .image_article{
+        height:35vh;
+    }
+ 
+    /* BURGER MENU */
+
+    .menu-wrap{
+        position:relative;
+        top:0;
+        right:0;
+        z-index:1;
+        grid-column:5;
+
+    }
+
+    .menu-wrap #toggler{
+        position: absolute;
+        top:0;
+        right:0;
+        z-index:2;
+        cursor:pointer;
+        opacity:0;
+        width:100%;
+        height:100%;
+    }
+
+    .menu-wrap .hamburger{
+        position:absolute;
+        top:0;
+        right:0;
+        z-index:1;
+        width:40px;
+        height:40px;
+        padding:1rem;
+        display:flex;
+        align-items:center;
+        justify-content:center ;
+    }
+
+    .menu-wrap .hamburger > div {
+        position:relative;
+        width:100%;
+        height:5px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition:all 0.5s ease;
+    }
+
+    .menu-wrap .hamburger > div::before{
+        content: '';
+        position:absolute;
+        z-index:1;
+        top:-10px;
+        width:100%;
+        height:5px;
+        background: inherit;;
+    }
+    .menu-wrap .hamburger > div::after{
+        content: '';
+        position:absolute;
+        z-index:1;
+        top:10px;
+        width:100%;
+        height:5px;
+        background:inherit;
+    }
+
+    .menu-wrap #toggler:checked + .hamburger > div{
+        transform:rotate(135deg);
+    }
+    .menu-wrap #toggler:checked + .hamburger > div:before,
+    .menu-wrap #toggler:checked + .hamburger > div:after{
+        top:0;
+        transform:rotate(90deg);
+    }
+
+    .menu-wrap #toggler:checked:hover + .hamburger > div{
+        transform:rotate(225deg);
+    }
+
+    .menu-wrap .menu {
+        position:fixed;
+        top:0;
+        right:0;
+        width:100%;
+        height:100%;
+        visibility: hidden;
+        overflow:hidden;
+        align-items: center;
+        justify-content:center ;
+
+    }
+
+    .menu-wrap .menu > div{
+        background-color: rgba(255,255,255,0.8);
+        border-radius:50%;
+        width:100vw;
+        height:100vw;
+        display:flex;
+        flex:none;
+        align-items: center;
+        justify-content: center;
+        transform: scale(0);
+        transition: all 0.5s ease;
+        border: solid 1px black;
+    }
+    .menu-wrap .menu > div > div{
+        text-align: center;
+        max-width: 90vw;
+        max-height: 100vh;
+        opacity:0;
+        transition: opacity 0.5s ease;
+    }
+
+    .menu-wrap .menu > div > div > ul{
+    
+        list-style-type: none;
+        font-size: 1.5rem;
+        padding:1rem;
+    }
+
+    .menu-wrap #toggler:checked ~ .menu {
+        visibility: visible;
+    }
+    .menu-wrap #toggler:checked ~ .menu > div{
+        transform:scale(1);
+        transition-duration: 0.5s;
+    }
+    .menu-wrap #toggler:checked ~ .menu > div > div{
+        opacity:1;
+        transition: opacity 0.5s ease;
+    }
+
+
+    /* FIN BURGER MENU */
+
+    .submit_input{
+        display:block;
+        justify-self: center;
+        align-self: center;
+    }
+    .submit_input input{
+       width:70vw;
+        padding-left:1%;
+        height:3vh;
+        
+    }
+
+    .search select{
+        display:block;
+        margin: 10px 10px 10px 10px;
+        width: 75vw;
+        justify-self: center;
+        align-self: center;
+        font-size: 1.5rem;
+    }
+    .select{
+        display:block;
+        justify-content: center;
+        
+    }
+    .search{
+        display:block;
+        margin: 10px 10px 10px 0px;
+    }
+
+    .search svg{
+        width:46%;
+    }
+
+    .cart{
+        grid-column: 4;
+        grid-row: 1;
+        align-self: center;
+        justify-self: center;
+    }
+}
+
+/* MEDIA QUERY TABLET */
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+
+    body{
+        margin:0 !important;
+        }
+        nav input[type="checkbox"]{
+            display:block;
+        }
+        .desktop{
+            display:none;
+        }
+        .mobile {
+            display:grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows:repeat(1,1fr);
+        }
+    
+        
+     
+        /* BURGER MENU */
+    
+        .menu-wrap{
+            position:relative;
+            top:0;
+            right:0;
+            z-index:1;
+            grid-column:5;
+    
+        }
+    
+        .menu-wrap #toggler{
+            position: absolute;
+            top:0;
+            right:0;
+            z-index:2;
+            cursor:pointer;
+            opacity:0;
+            width:100%;
+            height:100%;
+        }
+    
+        .menu-wrap .hamburger{
+            position:absolute;
+            top:0;
+            right:0;
+            z-index:1;
+            width:40px;
+            height:40px;
+            padding:1rem;
+            display:flex;
+            align-items:center;
+            justify-content:center ;
+        }
+    
+        .menu-wrap .hamburger > div {
+            position:relative;
+            width:100%;
+            height:5px;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition:all 0.5s ease;
+        }
+    
+        .menu-wrap .hamburger > div::before{
+            content: '';
+            position:absolute;
+            z-index:1;
+            top:-10px;
+            width:100%;
+            height:5px;
+            background: inherit;;
+        }
+        .menu-wrap .hamburger > div::after{
+            content: '';
+            position:absolute;
+            z-index:1;
+            top:10px;
+            width:100%;
+            height:5px;
+            background:inherit;
+        }
+    
+        .menu-wrap #toggler:checked + .hamburger > div{
+            transform:rotate(135deg);
+        }
+        .menu-wrap #toggler:checked + .hamburger > div:before,
+        .menu-wrap #toggler:checked + .hamburger > div:after{
+            top:0;
+            transform:rotate(90deg);
+        }
+    
+        .menu-wrap #toggler:checked:hover + .hamburger > div{
+            transform:rotate(225deg);
+        }
+    
+        .menu-wrap .menu {
+            position:fixed;
+            top:0;
+            right:0;
+            width:100%;
+            height:100%;
+            visibility: hidden;
+            overflow:hidden;
+            align-items: center;
+            justify-content:center ;
+    
+        }
+    
+        .menu-wrap .menu > div{
+            background-color: rgba(255,255,255,0.8);
+            border-radius:50%;
+            width:100vw;
+            height:100vw;
+            display:flex;
+            flex:none;
+            align-items: center;
+            justify-content: center;
+            transform: scale(0);
+            transition: all 0.5s ease;
+            border: solid 1px black;
+        }
+        .menu-wrap .menu > div > div{
+            text-align: center;
+            max-width: 90vw;
+            max-height: 100vh;
+            opacity:0;
+            transition: opacity 0.5s ease;
+        }
+
+        .menu-wrap .menu > div > div > ul{
+    
+            list-style-type: none;
+            font-size: 2.5rem;
+            padding:1rem;
+        }
+    
+        .menu-wrap #toggler:checked ~ .menu {
+            visibility: visible;
+        }
+        .menu-wrap #toggler:checked ~ .menu > div{
+            transform:scale(1);
+            transition-duration: 0.5s;
+        }
+        .menu-wrap #toggler:checked ~ .menu > div > div{
+            opacity:1;
+            transition: opacity 0.5s ease;
+        }
+    
+    
+        /* FIN BURGER MENU */
+    
+        .submit_input{
+            display:flex;
+            justify-self: center;
+            align-self: center;
+        }
+        .submit_input input{
+            padding-left:1%;
+            width:100vw;
+        }
+    
+        .search select{
+            display:block;
+            margin: 10px 10px 10px 10px;
+            width: 100%;
+            justify-self: center;
+            align-self: center;
+            font-size: 1.5rem;
+        }
+        .select{
+            display:block;
+            justify-content: center;
+        }
+        .search{
+            display:block;
+            margin: 10px 10px 10px 0px;
+        }
+    
+        .search svg{
+            width:46%;
+        }
+    
+        .cart{
+            grid-column: 4;
+            grid-row: 1;
+            align-self: center;
+            justify-self: center;
+        }
+
+}
+
+/* FIN MEDIA QUERY YOHAN */
+
+
